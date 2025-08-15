@@ -11,7 +11,7 @@ Specific objectives include:-
 •	Utilizing movie metadata to find similarities rather than relying on explicit ratings.
 •	Delivering fast and relevant recommendations via an interactive web app.
 ________________________________________
-Data Collection
+Data Collection:-
 •	Dataset sourced from TMDb (The Movie Database) public dataset containing:
 o	Movie titles
 o	Overview (plot summary)
@@ -19,7 +19,7 @@ o	Genres, keywords
 o	Cast and crew information
 •	Data is stored as CSV files (tmdb_5000_movies.csv & tmdb_5000_credits.csv).
 ________________________________________
-Technologies & Libraries Used
+Technologies & Libraries Used :-
 •	Python – Programming language.
 •	Pandas – Data handling and preprocessing.
 •	NumPy – Array-based operations.
@@ -28,8 +28,8 @@ Technologies & Libraries Used
 •	Pickle – Model/data serialization for faster loading.
 •	Streamlit – Web app framework for user interface.
 ________________________________________
-Data Preprocessing
-Steps followed before building the recommendation engine:
+Data Preprocessing:-
+Steps followed before building the recommendation engine:-
 1.	Merging datasets – Movies and credits datasets combined on the title column.
 2.	Feature selection – Retained relevant fields: movie_id, title, overview, genres, keywords, cast, crew.
 3.	Text extraction – Converted JSON-like strings into plain text lists.
@@ -63,7 +63,7 @@ _________________________________________________________
 •	Sorts all movies by similarity score.
 •	Returns top 5 recommendations.
 ________________________________________
-Streamlit Web App Features
+Streamlit Web App Features:-
 •	Movie Selection Dropdown – Choose any movie from the dataset.
 •	Recommendations Display – Shows top 5 similar movies.
 •	Poster Fetching – Uses TMDb API to display movie posters alongside recommendations.
